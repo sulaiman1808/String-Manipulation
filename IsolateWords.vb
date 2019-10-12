@@ -1,4 +1,4 @@
-﻿Module Module1
+Module Module1
 
     Sub Main()
         Dim MainString As String = ""
@@ -13,12 +13,13 @@
             NextChar = Mid(MainString, Counter, 1)
             If NextChar <> " " Then
                 FinalString = FinalString + NextChar
-            End If
-            If Counter = Len(MainString) Or NextChar = " " Then
+            ElseIf Counter = Len(MainString) Or NextChar = " " Then
                 Console.WriteLine(FinalString)
                 FinalString = ""
             End If
-        Next Counter
+
+        Next
+        Console.WriteLine(FinalString)
         Console.ReadKey()
 
 

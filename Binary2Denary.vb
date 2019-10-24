@@ -1,4 +1,4 @@
-﻿Module Module1
+Module Module1
 
     Sub Main()
         Dim BinaryNumber As String = ""
@@ -23,6 +23,9 @@
                     ValidBinaryString = False
                 End If
             Next
+                End If
+
+
 
         If ValidBinaryString = False Then
             Console.WriteLine("INVALID BINARY NUMBER!")
@@ -33,8 +36,8 @@
                 SingleDenaryDigit = Mid(BinaryNumber, Counter, 1)
                 DenaryOutput = DenaryOutput + SingleDenaryDigit * (2 ^ (Len(BinaryNumber) - Counter))
             Next
-                Console.WriteLine(BinaryNumber & "=" & DenaryOutput)
-            End If
+            Console.WriteLine(BinaryNumber & "=" & DenaryOutput)
+        End If
 
         Console.ReadKey()
 

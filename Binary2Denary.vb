@@ -23,9 +23,6 @@
                     ValidBinaryString = False
                 End If
             Next
-        Else
-            ValidBinaryString = False
-        End If
 
         If ValidBinaryString = False Then
             Console.WriteLine("INVALID BINARY NUMBER!")
